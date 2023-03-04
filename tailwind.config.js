@@ -2,11 +2,20 @@
 module.exports = {
   content: [
     "./app/**/*.{js,ts,tsx,jsx}",
-    "./component/**/*.{js,ts,jsx,tsx}",
+    "./components/**/*.{js,ts,jsx,tsx}",
     "./pages/**/*.{js,jsx,ts,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        dark: "#1C212D",
+        "dark-cta": "#2F374C",
+        primary: "#ffc300",
+        "primary-cta": "#ffd60a",
+        secondary: "#206f68",
+        "secondary-cta": "#49c496",
+      },
+    },
   },
   plugins: [],
 };
